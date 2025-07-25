@@ -1,0 +1,85 @@
+/* --- Animations for Scroll Triggered Effects --- */
+
+/* Base hidden state for animated items */
+.hidden-item {
+    opacity: 0;
+    transform: translateY(50px); /* Default sedikit ke bawah */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transisi yang lebih lembut */
+}
+
+/* Visible state when element enters viewport */
+.hidden-item.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Specific animations for different directions */
+.fade-in-up {
+    /* Sudah ditangani oleh .hidden-item */
+}
+
+.from-left {
+    transform: translateX(-50px); /* Mulai dari kiri */
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.from-left.animate-visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.from-right {
+    transform: translateX(50px); /* Mulai dari kanan */
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.from-right.animate-visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Keyframe for copy-message fade out */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Animation for the wish items when they change */
+.current-wish-container .wish-item {
+    animation: slideInFromRight 0.6s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Optional: Add a subtle pulse for the confetti button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+#confettiButton {
+    animation: pulse 2s infinite ease-in-out;
+}

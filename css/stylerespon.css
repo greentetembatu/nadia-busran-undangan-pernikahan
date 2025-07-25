@@ -1,0 +1,119 @@
+
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+    .overlay-content {
+        padding: 2.5rem 3rem;
+    }
+    .overlay-content h1 {
+        font-size: 3.5rem;
+    }
+    .overlay-content h2 {
+        font-size: 2.8rem;
+    }
+    .overlay-content h3#guest-name-display {
+        font-size: 2.5rem;
+    }
+    .overlay-content img.foto-depan {
+        width: 250px;
+        height: 250px;
+    }
+    .countdown div {
+        font-size: 2.5rem;
+        min-width: 90px;
+    }
+    .openWebsiteBtn {
+        font-size: 1.3rem;
+        padding: 18px 40px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9em;
+        padding: 12px 15px;
+    }
+    .navbar-nav .nav-link i {
+        font-size: 1.6em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
+
+    .main-section {
+        padding: 80px 40px; /* Lebih banyak padding di desktop */
+    }
+    .gallery-grid-2col {
+        grid-template-columns: 1fr 1fr; /* 2 kolom untuk desktop */
+    }
+    .event-grid {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .event-detail {
+        min-width: unset; /* Reset min-width */
+        flex: 1; /* Biarkan flex mengatur lebar */
+    }
+    .gift-box, .gift-address-box {
+        flex: 1 1 45%;
+        max-width: 48%;
+    }
+    .gift-address-box {
+        flex: 1 1 90%;
+        max-width: 96%;
+    }
+    #mengundang .invitation-list {
+        flex: 1;
+        min-width: unset;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main-wrapper {
+        padding: 30px;
+    }
+    .main-section {
+        margin-bottom: 40px;
+    }
+    .quran-verse {
+        font-size: 1.5em;
+    }
+    .thank-you-message {
+        font-size: 1.25em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main-wrapper {
+        max-width: 960px; /* Lebar maksimum yang lebih besar */
+    }
+    .overlay-content {
+        padding: 3rem 4rem;
+    }
+    .overlay-content h1 {
+        font-size: 4rem;
+    }
+    .overlay-content h2 {
+        font-size: 3.2rem;
+    }
+    .overlay-content h3#guest-name-display {
+        font-size: 3rem;
+    }
+    .openWebsiteBtn {
+        font-size: 1.4rem;
+    }
+    .countdown div {
+        font-size: 3rem;
+        min-width: 100px;
+    }
+    #confettiButton {
+        width: 65px;
+        height: 65px;
+        font-size: 2em;
+    }
+}
