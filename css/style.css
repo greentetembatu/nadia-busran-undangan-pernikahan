@@ -350,8 +350,8 @@ a:hover {
 
 .gallery-item {
     width: 100%;
-    height: auto; /* Tinggi tetap untuk konsistensi */
-    max-height: 600px;
+    height: 400; /* Tinggi tetap untuk konsistensi */
+    max-height: 450px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: var(--shadow-light);
