@@ -3,7 +3,7 @@
 /* Base hidden state for animated items */
 .hidden-item {
     opacity: 0;
-    transform: translateY(50px); /* Default sedikit ke bawah */
+    transform: translateY(20px); /* Default sedikit ke bawah */
     transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transisi yang lebih lembut */
 }
 
