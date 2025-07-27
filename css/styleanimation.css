@@ -21,7 +21,7 @@
 .from-left {
     transform: translateX(-50px); /* Mulai dari kiri */
     opacity: 0;
-    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 .from-left.animate-visible {
@@ -32,7 +32,7 @@
 .from-right {
     transform: translateX(50px); /* Mulai dari kanan */
     opacity: 0;
-    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 .from-right.animate-visible {
